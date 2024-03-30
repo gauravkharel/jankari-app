@@ -5,7 +5,7 @@ import Profiles from "./components/Profiles"
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-slate-100">
       <Header />
       {/* <UserForm />
       <UserTable /> */}

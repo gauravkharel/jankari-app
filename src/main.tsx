@@ -6,12 +6,17 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Profiles from './components/Profiles.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
+  {
+    path: "/profiles",
+    element: <Profiles />
+  }
 ]);
 
 
