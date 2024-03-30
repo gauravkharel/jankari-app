@@ -1,21 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Profiles from './components/Profiles.tsx';
+import Users from './pages/Users';
+import UserProfiles from './pages/UserProfiles';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Users />,
   },
   {
     path: "/profiles",
-    element: <Profiles />
+    element: <UserProfiles />
   }
 ]);
 

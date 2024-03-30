@@ -10,15 +10,16 @@ const province=[
   "Sudarpashchim Province",
 ] as const
 
-"Kathmandu, Bagmati Province"
-
 export const UserSchema = z.object({
+  id: z.string(),
   name: z.string().min(1, { message: "Name is required" }),
   email: z.string().email({ message: "Invalid Email. Please use valid email format." }),
   phonenumber: z.string().refine((value) => /^\d{7,}$/.test(value), {
     message: "Phone number must be only numbers and at least 7 digits",
   }),
-  dob: z.date(),
+  dob: z.string({
+    required_error: "A date of birth is required.",
+  }),
   address: z.object({
     city: z.string(),
     district: z.string(),

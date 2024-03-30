@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import users from '../assets/mockdata.json'
+import users from '../data/mockdata.json'
 import { Card } from './ui/Card'
 import { formatDate } from '@/lib/helper'
 import { Button } from '@/components/ui/Button'
@@ -25,8 +25,8 @@ const Profiles: FC<ProfilesProps> = () => {
                     <div className='flex flex-row justify-around pb-4'>
                         <div>
                             <div className='text-gray-400'>Born on {formatDate(user.dob)}</div>
-                            <div className=' text-gray-500'>From {user.city}, {user.district}</div>
-                            <div className=' text-gray-600'>{user.province}, {user.country} </div>
+                            <div className=' text-gray-500'>From {user.address.city}, {user.address.district}</div>
+                            <div className=' text-gray-600'>{user.address.province}, {user.address.country} </div>
                         </div>
                         <Button variant={'secondary'}>Click for toast</Button>
                     </div>

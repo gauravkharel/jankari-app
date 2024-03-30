@@ -38,3 +38,7 @@ There should be a button below the table. The button must navigate users to anot
 
 Store everything locally i.e. browser’s local storage
 
+
+
+## Some new stuffs found:
+https://ui.shadcn.com/docs/components/data-table#prerequisites
