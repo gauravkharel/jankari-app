@@ -1,11 +1,15 @@
+import Header from "./components/Header"
+import Profiles from "./components/Profiles"
+// import UserForm from "./components/UserForm"
+// import UserTable from "./components/UserTable"
 
 const App = () => {
   return (
-    <div>App
-
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <div>
+      <Header />
+      {/* <UserForm />
+      <UserTable /> */}
+      <Profiles />
     </div>
   )
 }
